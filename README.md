@@ -1,0 +1,2 @@
+# shared-lib
+Common library
