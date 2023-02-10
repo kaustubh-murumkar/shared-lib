@@ -13,7 +13,7 @@ var (
 )
 
 func Init(filePath string, isProduction bool) error {
-	logFile, err := osOpenFile(filePath, os.O_CREATE|os.O_APPEND|os.O_RDWR, fs.FileMode(644))
+	logFile, err := osOpenFile(filePath, os.O_CREATE|os.O_APPEND|os.O_RDWR, fs.FileMode(0644))
 	if err != nil {
 		return err
 	}
